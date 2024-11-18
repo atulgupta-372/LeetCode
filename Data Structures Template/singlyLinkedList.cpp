@@ -12,6 +12,19 @@ class Node{
     }
 }
 
+void insertAtHead(Node* &head,int d){
+    Node* temp=new Node(d);
+    temp->next=head;
+    head=temp;
+}
+
+void printList(Node* head){
+    while(head!=NULL){
+        cout<<head->data<<" ";
+        head=head->next;
+    }
+    cout<<endl;
+}
 
 int main(){
 
